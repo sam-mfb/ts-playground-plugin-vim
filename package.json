@@ -9,7 +9,7 @@
   "scripts": {
     "build": "rollup -c rollup.config.js;",
     "compile": "tsc",
-    "start": "concurrently -p \"[{name}]\" -n \"ROLLUP,SITE\" -c \"bgBlue.bold,bgMagenta.bold\" \"yarn rollup -c rollup.config.js --watch\" \"yarn serve dist\""
+    "start": "yarn serve --listen 5000 dist"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
